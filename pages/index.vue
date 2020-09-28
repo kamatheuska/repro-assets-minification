@@ -28,7 +28,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      script: [
+        {
+          src: '~assets/someJs.js'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style>
